@@ -73,7 +73,7 @@ void test_sort(void func(int*, int))
 int main(int argc, char **argv)
 {
 	//test_sort(quicksort);
-	test_sort(merge_sort);
+	test_sort(heap_sort);
 
 	return 0;
 }
