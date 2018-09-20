@@ -63,7 +63,6 @@ void test_sort(void func(int*, int))
 
 	int e[] = {10, 7, 11, 8, 10};
 	int e_result[] = {7,  8, 10, 10, 11};
-	echo_data(e, 5);
 	func(e, 5);
 	echo_data(e, 5);
 	assert(0 == compare_data(e, e_result, 5));
@@ -73,7 +72,8 @@ void test_sort(void func(int*, int))
 //main: test for quicksort
 int main(int argc, char **argv)
 {
-	test_sort(quicksort);
+	//test_sort(quicksort);
+	test_sort(merge_sort);
 
 	return 0;
 }
